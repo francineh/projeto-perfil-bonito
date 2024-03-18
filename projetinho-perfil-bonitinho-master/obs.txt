@@ -1,0 +1,15 @@
+>Neste projeto foi usado um layout, do site " front-end mentor", para fins de estudo.
+
+"passos que levaram ao resultado final!"
+
+1> O interessante nesse projeto é  que Temos a tag <main> que é usado para definir o conteudo principal da pagina.
+
+2> Este projeto tambem  foi separado por seções, elas servem para determinar topicos importantes do seu documento.
+
+3> todo projeto foi baseado nos conhecimentos sobre "grid", que tem como função colocar os elementos separados por linhas e colunas.
+/>
+
+
+Francine Hollweg. data:/06/2021
+
+

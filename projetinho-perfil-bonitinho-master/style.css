@@ -1,0 +1,155 @@
+/* configuração padrao */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background: white;
+}
+
+:root {
+  font-size: 14px;
+}
+
+/* primeiro card */
+
+#card {
+  width: 60%;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 20% 80%;
+
+  position: relative;
+  top: 30%;
+  transform: translateY(25%);
+
+  background: linear-gradient(65deg, #fef2f2, #fff9f9);
+
+  box-shadow: 3px 3px 100px 10px black;
+}
+
+/* Card do logo  */
+
+#container-logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  background: white;
+
+  padding-left: 10%;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  background: none;
+}
+
+/* CONFIGURAÇÕES DO MERCHAN */
+
+#container-merchan {
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  background: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#container-merchan div {
+  width: 60%;
+  margin: 0 auto;
+
+  /* text-align: center; */
+
+  font-size: 1.7rem;
+}
+
+#container-merchan div p {
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 150%;
+}
+
+#container-merchan div #titulo {
+  font-size: 3.5rem;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+/* Neste caso queremos pegar o segundo p e estilizar ele, para isso usamos o p + p */
+
+#container-merchan div p + p {
+  margin-top: 5%;
+}
+
+#container-merchan div span {
+  color: #f4d4d3;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+#container-merchan #container-btn {
+  position: relative;
+  width: 60%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-merchan #container-btn i {
+  position: absolute;
+  right: -4%;
+  background: linear-gradient(#f7b9b8, #ef9494);
+  color: white;
+  padding: 5%;
+  border-radius: 70px;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 25%;
+
+  transform: scale(0.7);
+}
+
+#container-merchan #container-btn i:hover {
+  background: linear-gradient(#f7b9b8, #f7b9b8);
+  cursor: pointer;
+}
+#container-merchan input {
+  padding: 3%;
+  color: #f4d4d3;
+  border-radius: 15px;
+
+  width: 100%;
+  border: 1.5px solid #f4d4d3;
+}
+
+#container-merchan input::placeholder,
+:focus {
+  color: #f4d4d3;
+  outline: none;
+}
+
+/* CONFIGURAÇÕES DA FOTO PRINCIPAL */
+
+#container-modelo {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+#container-modelo img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
